@@ -1,10 +1,21 @@
-<HTML>
-<BODY>
-<FORM method='POST' ACTION="processCarPolicy.php">
-Policy Number:<INPUT TYPE="TEXT" NAME="policyNumber"></BR>
-Yearly Premium:<INPUT TYPE="TEXT" NAME="yearlyPremium"></BR>
-Date of Last Claim:<INPUT TYPE="DATE" NAME="dateOfLastClaim"></BR>
-<INPUT TYPE="SUBMIT">
-</FORM>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Policy Form</title>
+</head>
+<body>
+    <form method="POST" action="processCarPolicy.php">
+        <label for="policyNumber">Policy Number:</label>
+        <input type="text" id="policyNumber" name="policyNumber" required><br><br>
+
+        <label for="yearlyPremium">Yearly Premium:</label>
+        <input type="number" id="yearlyPremium" name="yearlyPremium" required><br><br>
+
+        <label for="dateOfLastClaim">Date of Last Claim:</label>
+        <input type="date" id="dateOfLastClaim" name="dateOfLastClaim"><br><br>
+
+        <input type="submit" value="Calculate Premium">
+    </form>
+</body>
+</html>
